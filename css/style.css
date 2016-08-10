@@ -1,0 +1,23 @@
+body {
+	font-size: 13px;
+	line-height: 24px;
+	color: #000000;
+	font-weight: bold;
+	font-family: PTSans;
+}
+
+h2 {
+	font-size: 18px;
+	line-height: 20px;
+	color: #000000;
+	font-weight: normal;
+	font-family: PTSans;
+}
+
+h1 {
+	font-size: 16px;
+	line-height: 23px;
+	color: #ee3643;
+	font-style: italic;
+	font-family: Cuprum;
+}

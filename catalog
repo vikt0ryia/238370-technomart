@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Техномарт</title>
+		<link href="css/style.css" rel="stylesheet">
 	</head>
 
 	<body>
@@ -152,55 +153,55 @@
 					</div>
 					<div class="products-conteiner">
 						<section class="products-card">
-							<img src="img/products-2.png" width="300" height="100" alt="Перфоратор">
+							<img src="img/bfg3.jpg" width="127" height="112" alt="Перфоратор BOSH BFG 3000">
 							<h2 class="products-name">Перфоратор BOSH BFG 3000</h2>
 							<span class="cost-del">22500 P.</span>
 							<a class="buy" href="#">15500 P.</a>
 						</section>
 						<section class="products-card">
-							<img src="img/products-3.png" width="300" height="100" alt="Перфоратор">
+							<img src="img/bfg6.jpg" width="144" height="128" alt="Перфоратор BOSH BFG 6000">
 							<h2 class="products-name">Перфоратор BOSH BFG 6000</h2>
 							<span class="cost-del">30500 P.</span>
 							<a class="buy" href="#">25500 P.</a>
 						</section>
 						<section class="products-card">
-							<img src="img/products-4.png" width="300" height="100" alt="Перфоратор">
+							<img src="img/bfg6.jpg" width="144" height="128" alt="Перфоратор BOSH BFG 6000">
 							<h2 class="products-name">Перфоратор BOSH BFG 2000</h2>
 							<span class="cost-del"></span>
 							<a class="buy" href="#">12500 P.</a>
 						</section>
 						<section class="products-card">
-							<img src="img/products-2.png" width="300" height="100" alt="Перфоратор">
+							<img src="img/bfg3.jpg" width="127" height="112" alt="Перфоратор BOSH BFG 3000">
 							<h2 class="products-name">Перфоратор BOSH BFG 3000</h2>
 							<span class="cost-del">22500 P.</span>
 							<a class="buy" href="#">15500 P.</a>
 						</section>
 						<section class="products-card">
-							<img src="img/products-3.png" width="300" height="100" alt="Перфоратор">
+							<img src="img/bfg6.jpg" width="144" height="128" alt="Перфоратор BOSH BFG 6000">
 							<h2 class="products-name">Перфоратор BOSH BFG 6000</h2>
 							<span class="cost-del">30500 P.</span>
 							<a class="buy" href="#">25500 P.</a>
 						</section>
 						<section class="products-card">
-							<img src="img/products-4.png" width="300" height="100" alt="Перфоратор">
+							<img src="img/bfg6.jpg" width="144" height="128" alt="Перфоратор BOSH BFG 6000">
 							<h2 class="products-name">Перфоратор BOSH BFG 2000</h2>
 							<span class="cost-del"></span>
 							<a class="buy" href="#">12500 P.</a>
 						</section>
 						<section class="products-card">
-							<img src="img/products-2.png" width="300" height="100" alt="Перфоратор">
+							<img src="img/bfg3.jpg" width="127" height="112" alt="Перфоратор BOSH BFG 3000">
 							<h2 class="products-name">Перфоратор BOSH BFG 3000</h2>
 							<span class="cost-del">22500 P.</span>
 							<a class="buy" href="#">15500 P.</a>
 						</section>
 						<section class="products-card">
-							<img src="img/products-3.png" width="300" height="100" alt="Перфоратор">
+							<img src="img/bfg6.jpg" width="144" height="128" alt="Перфоратор BOSH BFG 6000">
 							<h2 class="products-name">Перфоратор BOSH BFG 6000</h2>
 							<span class="cost-del">30500 P.</span>
 							<a class="buy" href="#">25500 P.</a>
 						</section>
 						<section class="products-card">
-							<img src="img/products-4.png" width="300" height="100" alt="Перфоратор">
+							<img src="img/bfg6.jpg" width="144" height="128" alt="Перфоратор BOSH BFG 6000">
 							<h2 class="products-name">Перфоратор BOSH BFG 2000</h2>
 							<span class="cost-del"></span>
 							<a class="buy" href="#">12500 P.</a>
