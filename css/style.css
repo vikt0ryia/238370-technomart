@@ -3,7 +3,7 @@ body {
 	line-height: 24px;
 	color: #000000;
 	font-weight: bold;
-	font-family: PTSans;
+	font-family: PT Sans;
 }
 
 h2 {
@@ -11,7 +11,7 @@ h2 {
 	line-height: 20px;
 	color: #000000;
 	font-weight: normal;
-	font-family: PTSans;
+	font-family: PT Sans;
 }
 
 h1 {
@@ -20,4 +20,103 @@ h1 {
 	color: #ee3643;
 	font-style: italic;
 	font-family: Cuprum;
+}
+
+
+
+.header-top {
+    
+}
+
+.wrapper {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.header-bottom {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*======================================
+ Системное оформление - не изменять
+=======================================*/
+
+body {
+  padding: 3px;
+}
+
+body > *,
+body > * > *,
+body > * > * > * {
+  position: relative;
+}
+
+body > *::before,
+body > * > *::before,
+body > * > * > *::before {
+  content: "";
+  position: absolute;
+
+  height: 24px;
+  padding: 2px 5px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Courier New", monotype;
+  white-space: nowrap;
+}
+
+body > *::before {
+  top: -3px;
+  left: -3px;
+}
+
+body > * > *::before {
+  top: -3px;
+  left: -3px;
+}
+
+body > * > * > *::before {
+  top: 0;
+  left: 0;
+}
+
+body > * {
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+}
+
+body > *::before {
+  color: white;
+
+  background: green;
+}
+
+.main-header::before {
+  content: ".main-header";
 }
