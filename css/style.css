@@ -89,12 +89,12 @@ h1 {
 
 .promo {
     outline: 2px solid grey;
-    margin-bottom: 53px;
+    margin-bottom: 46px;
 }
 
 .promo-layout {
     width: 300px;
-    min-height: 125px;
+    min-height: 123px;
     outline: 2px solid red;
     margin-bottom: 20px;
 }
@@ -115,6 +115,11 @@ h1 {
     float: right;
 }
 
+.promo-layout-5,
+.slider {
+    margin-bottom: 0;
+}
+
 .headline {
     min-height: 89px;
     outline: 2px solid red;
@@ -125,14 +130,17 @@ h1 {
     text-align: justify;
     font-size: 0;
     margin-bottom: 21px;
+    outline: 2px solid yellow;
 }
 
 .products-card {
     outline: 2px solid red;
     display: inline-block;
     width: 220px;
+    min-height: 318px;
     margin-right: 20px;
     font-size: 17px;
+    vertical-align: top;
     
 }
 
@@ -140,20 +148,106 @@ h1 {
     margin-right: 0;
 }
 
-.manufacturer {
+.manufacturer-block {
     outline: 2px solid red;
     margin-bottom: 85px;
+    font-size: 0;
 }
 
-.manufacturer a {
+.manufacturer-item {
     display: inline-block;
     width: 220px;
     min-height: 145px;
     vertical-align: top;
     outline: 2px solid green;
+    margin-right: 20px;
+}
+
+.manufacturer-4,
+.manufacturer-8 {
+    margin-right: 0;
+}
+
+.manufacturer-1,
+.manufacturer-2,
+.manufacturer-3,
+.manufacturer-4 {
+    margin-bottom: 20px;
 }
 
 .services {
     outline: 2px solid green;
+    margin-bottom: 80px;
+    padding-bottom: 54px;
+    padding-top: 65px;
 }
+
+.services-nav,
+.services-1,
+.services-2 {
+   outline: 2px solid green; 
+}
+
+.services-nav {
+    width: 240px;
+    min-height: 279px;
+    padding-right: 60px;
+    margin-right: 20px;
+    float: left;
+}
+
+.services-2 {
+    float: left
+}
+
+.about {
+    outline: 2px solid green;
+    margin-bottom: 85px;
+}
+
+.about-company {
+    width: 620px;
+    margin-right: 20px;
+    float: left;
+    outline: 2px solid red;
+}
+
+.map {
+    width: 300px;
+    float: right;
+    outline: 2px solid red;
+}
+
+.footer-top {
+    outline: 2px solid green;
+}
+
+.footer-nav {
+    float: right;
+    width: 550px;
+    outline: 2px solid red;
+}
+
+.footer-nav-top,
+.footer-nav-bottom {
+    text-align: right;
+}
+
+.footer-nav li{
+    outline: 2px solid orange;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.footer-bottom {
+    outline: 2px solid green;
+    
+}
+
+.footer-bottom section {
+    outline: 2px solid orange;
+    display: inline-block
+}
+
+
 
