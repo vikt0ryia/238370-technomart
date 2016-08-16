@@ -30,7 +30,8 @@ h1 {
 }
 
 .header-top {
-    outline: 2px solid green;  
+    outline: 2px solid green; 
+    font-size: 0;
 }
 
 .header-bottom {
@@ -56,6 +57,7 @@ h1 {
 .basket,
 .cart{
     display: inline-block;
+    font-size: 12px;
 }
 
 .name-description,
@@ -72,6 +74,7 @@ h1 {
 
 .main-navigation {
     outline: 2px solid pink; 
+    font-size: 0;
     min-height: 60px;   /* Только для оформления сетки */ 
 }
 
@@ -81,6 +84,7 @@ h1 {
 
 .main-navigation li {
     display: inline-block;
+    font-size: 12px;
 }
 
 .content {
@@ -240,7 +244,11 @@ h1 {
 
 .footer-bottom {
     outline: 2px solid green;
-    
+    font-size: 0;  
+}
+
+.footer-bottom section {
+    font-size: 12px;
 }
 
 .footer-bottom section {
@@ -248,14 +256,24 @@ h1 {
     display: inline-block
 }
 
+.footer-bottom .footer-social {
+    font-size: 0;
+}
+
+.social-btn {
+    font-size: 14px;
+}
+
             /* Catalog */ 
 
 .breadcrumbs {
     outline: 2px solid orange;
+    font-size: 0;
 }
 
 .breadcrumbs li {
     display: inline-block;
+    font-size: 12px;
 }
 
 .catalog-title {
