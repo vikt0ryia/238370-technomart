@@ -22,101 +22,138 @@ h1 {
 	font-family: Cuprum;
 }
 
+.clearfix::after {
+  content: "";
 
+  display: table;
+  clear: both;
+}
 
 .header-top {
-    
+    outline: 2px solid green;  
+}
+
+.header-bottom {
+    outline: 2px solid green;  
+    padding-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .wrapper {
     width: 940px;
     margin: 0 auto;
+    outline: 2px solid blue; 
 }
 
-.header-bottom {
+.header-content {
+    outline: 2px solid pink; 
+    min-height: 160px;   /* Только для оформления сетки */
+}
+
+.header-logo,
+.search,
+.bookmark,
+.basket,
+.cart{
+    display: inline-block;
+}
+
+.name-description,
+.header-contacts {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
+
+.user-block {
+    float: right;
+    margin-right: 0;
+}
+
+.main-navigation {
+    outline: 2px solid pink; 
+    min-height: 60px;   /* Только для оформления сетки */ 
+}
+
+.main-navigation ul {
+    text-align: center;
+}
+
+.main-navigation li {
+    display: inline-block;
+}
+
+.content {
+    outline: 2px solid green;
+}
+
+.promo {
+    outline: 2px solid grey;
+    margin-bottom: 53px;
+}
+
+.promo-layout {
+    width: 300px;
+    min-height: 125px;
+    outline: 2px solid red;
+    margin-bottom: 20px;
+}
+
+.promo-layout-1,
+.promo-layout-2,
+.slider {
+    float: left;
+}
+
+.promo-layout-2 {
+    margin-left: 20px;
+}
+
+.promo-layout-3,
+.promo-layout-4,
+.promo-layout-5 {
+    float: right;
+}
+
+.headline {
+    min-height: 89px;
+    outline: 2px solid red;
+    margin-bottom: 20px;
+}
+
+.products {
+    text-align: justify;
+    font-size: 0;
+    margin-bottom: 21px;
+}
+
+.products-card {
+    outline: 2px solid red;
+    display: inline-block;
+    width: 220px;
+    margin-right: 20px;
+    font-size: 17px;
     
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*======================================
- Системное оформление - не изменять
-=======================================*/
-
-body {
-  padding: 3px;
+.products .products-card:last-child {
+    margin-right: 0;
 }
 
-body > *,
-body > * > *,
-body > * > * > * {
-  position: relative;
+.manufacturer {
+    outline: 2px solid red;
+    margin-bottom: 85px;
 }
 
-body > *::before,
-body > * > *::before,
-body > * > * > *::before {
-  content: "";
-  position: absolute;
-
-  height: 24px;
-  padding: 2px 5px;
-
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  font-family: "Courier New", monotype;
-  white-space: nowrap;
+.manufacturer a {
+    display: inline-block;
+    width: 220px;
+    min-height: 145px;
+    vertical-align: top;
+    outline: 2px solid green;
 }
 
-body > *::before {
-  top: -3px;
-  left: -3px;
+.services {
+    outline: 2px solid green;
 }
 
-body > * > *::before {
-  top: -3px;
-  left: -3px;
-}
-
-body > * > * > *::before {
-  top: 0;
-  left: 0;
-}
-
-body > * {
-  background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green;
-}
-
-body > *::before {
-  color: white;
-
-  background: green;
-}
-
-.main-header::before {
-  content: ".main-header";
-}
