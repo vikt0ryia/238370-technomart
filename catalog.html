@@ -10,8 +10,8 @@
 
 		<header class="header">
 			<div class="header-top">
-				<div class="wrapper">
-					<div class="logo">
+				<div class="wrapper clearfix">
+					<div class="header-logo">
         				<a href="#"><img src="img/logo.png" width="300" height="100" alt="Магазин «Техномарт»"></a>
 					</div>
 					<form action="#" method="post" class="search">
@@ -25,10 +25,10 @@
 			</div>
 			<div class="header-bottom">
 				<div class="wrapper">
-					<div class="index-content">
-						<h1 class="name">Интернет-магазин строительных материалов и инструментов для работы</h1>
-						<div class="index-content-contacts">
-							<div class="index-content-number">
+					<div class="header-content clearfix">
+						<h1 class="name-description">Интернет-магазин строительных материалов и инструментов для работы</h1>
+						<div class="header-contacts">
+							<div class="header-contacts-number">
 								<div class="logo-phone"></div>
 								<a href="tel:+78125550505" class="number">+7 (812) 555-05-55</a>
 							</div>
@@ -90,50 +90,51 @@
 					</li>
 				</ul>	
 			</div>
-			<div class="catalog-title-background">
-				<h1 class="catalog-title">Перфораторы</h1>
-			</div>
-			<div class="catalog-body">
-				<div>
-					<div class="filter">Фильтр</div>
-					<form action="#" method="post">					
-						<div class="scroll-price"></div>
-						<div class="manufacturer-box">
-							<p>Производители:</p>
-							<input type="checkbox" name="bosh" id="bosh" checked>
-							<label for="bosh">Bosh</label>
-							<br>
-							<input type="checkbox" name="interskol" id="bosh" checked>
-							<label for="bosh">Интерскол</label>
-							<br>
-							<input type="checkbox" name="makita" id="makita" checked>
-							<label for="bosh">Makita</label>
-							<br>
-							<input type="checkbox" name="dewalt" id="dewalt" checked>
-							<label for="bosh">dewalt</label>
-							<br>
-							<input type="checkbox" name="hitachi" id="hitachihitachi" checked>
-							<label for="bosh">hitachi</label>
-						</div>
-						<div class="power-box">
-							<p>Питание:</p>
-							<label>
-								<input type="radio" name="power" value="battery">
-								Аккумуляторные
-							</label>
-							<br>
-							<label>
-								<input type="radio" name="power" value="set">
-								Сетевые
-							</label>
-						</div>
-						<input type="submit" value="Отправить">
-					</form>
-				</div>
+			
+            <h1 class="catalog-title">Перфораторы</h1>
+            
+			<div class="catalog-body clearfix">
+                <div class="filter">
+                    <p>Фильтр</p>
+                    <form action="#" method="post">					
+                        <div class="scroll-price"></div>
+                        <fieldset class="manufacturer-filter">
+                            <legend>Производители:</legend>
+                            <input type="checkbox" name="bosh" id="bosh" checked>
+                            <label for="bosh">Bosh</label>
+                            <br>
+                            <input type="checkbox" name="interskol" id="interskol">
+                            <label for="interskol">Интерскол</label>
+                            <br>
+                            <input type="checkbox" name="makita" id="makita" checked>
+                            <label for="makita">Makita</label>
+                            <br>
+                            <input type="checkbox" name="dewalt" id="dewalt">
+                            <label for="dewalt">dewalt</label>
+                            <br>
+                            <input type="checkbox" name="hitachi" id="hitachi">
+                            <label for="hitachi">hitachi</label>
+                        </fieldset>
+                        <fieldset class="power-filter">
+                            <legend>Питание:</legend>
+                            <label>
+                                <input type="radio" name="power" value="battery">
+                                Аккумуляторные
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" name="power" value="set">
+                                Сетевые
+                            </label>
+                        </fieldset>
+                        <input type="submit" value="Отправить">
+                    </form>
+                </div>
+            
 				<div class="catalog-main">
 					<div class="catalog-main-sort">
-						<p>Сортировка:</p>
-						<ul>								
+						<ul>
+                            <p>Сортировка:</p>
 							<li>
 								<a href="#">По цене</a>
 							</li>
@@ -207,7 +208,7 @@
 							<a class="buy" href="#">12500 P.</a>
 						</section>
 					</div>
-					<div class="catalog-pages">
+					<div class="paginator">
 						<ul>								
 							<li class="activ">
 								<a>1</a>
@@ -232,43 +233,50 @@
 				</div>
 			</div>
 		</main>
+		
 		<footer class="footer">
 			<div class="footer-top">
-				<div class="wrapper">
-					<a href="#"><img src="img/logo-footer.png" width="300" height="100" alt="Магазин «Техномарт»"></a>
+				<div class="wrapper clearfix">
+                    <div class="footer-nav">
+                        <ul class="footer-nav-top">
+                            <li>
+                                <a href="#">Компания</a>
+                            </li>
+                            <li>
+                                <a href="#">Новости</a>
+                            </li>
+                            <li>
+                                <a href="#">Каталог</a>
+                            </li>
+                            <li>
+                                <a href="#">Доставка</a>
+                            </li>
+                        </ul>    
+                        <ul class="footer-nav-bottom">
+                            <li>
+                                <a href="#">Материалы</a>
+                            </li>
+                            <li>
+                                <a href="#">Техника</a>
+                            </li>
+                            <li>
+                                <a href="#">Инструмент</a>
+                            </li>
+                            <li>
+                                <a href="#">Спецпредложения</a>
+                            </li>
+                        </ul>
+                    </div>
+					<a href="#"><img src="img/logo.jpg" width="300" height="100" alt="Магазин «Техномарт»"></a>
 					<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-					<ul class="pagination">
-						<li>
-							<a href="#">Компания</a>
-						</li>
-						<li>
-							<a href="#">Новости</a>
-						</li>
-						<li>
-							<a href="#">Каталог</a>
-						</li>
-						<li>
-							<a href="#">Доставка</a>
-						</li>
-						<li>
-							<a href="#">Материалы</a>
-						</li>
-						<li>
-							<a href="#">Техника</a>
-						</li>
-						<li>
-							<a href="#">Инструмент</a>
-						</li>
-						<li>
-							<a href="#">Спецпредложения</a>
-						</li>
-					</ul>
 				</div>
 			</div>
 			<div class="footer-bottom">
 				<div class="wrapper">
-					<p>2010-2016 Компания «Техномарт»<br>
+					<section class="footer-rights">
+                        <p>2010-2016 Компания «Техномарт»<br>
 					   Все права защищены</p>
+                    </section>
 					<section class="footer-social">
 						<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
 						<a class="social-btn social-btn-fb" href="#">Фейсбук</a>

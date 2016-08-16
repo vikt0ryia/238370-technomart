@@ -127,7 +127,6 @@ h1 {
 }
 
 .products {
-    text-align: justify;
     font-size: 0;
     margin-bottom: 21px;
     outline: 2px solid yellow;
@@ -248,6 +247,67 @@ h1 {
     outline: 2px solid orange;
     display: inline-block
 }
+
+            /* Catalog */ 
+
+.breadcrumbs {
+    outline: 2px solid orange;
+}
+
+.breadcrumbs li {
+    display: inline-block;
+}
+
+.catalog-title {
+    outline: 2px solid pink;
+}
+
+.filter {
+    outline: 2px solid brown;
+    width: 220px;
+    float: left;
+    margin-right: 20px;
+}
+
+.scroll-price {
+    min-height: 190px;
+    outline: 2px solid orange;
+}
+
+.catalog-main {
+    outline: 2px solid green;
+    width: 700px;
+    float: right;
+    margin-bottom: 50px;
+}
+.catalog-main-sort {
+    outline: 2px solid orange;
+}
+
+.catalog-main-sort p,
+.catalog-main-sort li {
+    display: inline-block;
+}
+
+.products-conteiner {
+    font-size: 0;
+    margin-bottom: 21px;
+    outline: 2px solid yellow;
+}
+
+.products-conteiner .products-card:nth-child(3n) {
+    margin-right: 0;
+}
+
+.paginator {
+    outline: 2px solid brown;
+}
+
+.paginator li {
+    display: inline-block;
+}
+
+
 
 
 
