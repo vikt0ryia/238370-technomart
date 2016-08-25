@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Техномарт</title>
+        <link href="css/normalize.css" rel="stylesheet" >
+        <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 
@@ -10,17 +12,19 @@
 
 		<header class="header">
 			<div class="header-top">
-				<div class="wrapper">
+				<div class="wrapper clearfix">
 					<div class="header-logo">
-        				<a href="#"><img src="img/logo.png" width="220" height="42" alt="Магазин «Техномарт»"></a>
+        				<a>Техномарт</a>
 					</div>
 					<form action="#" method="post" class="search">
 						<input type="search" placeholder="Поиск:" class="input"/>
 						<input type="submit" class="submit"/>
 					</form>
-					<div class="bookmark"><a href="#">Закладки:0</a></div>
-					<div class="basket"><a href="#">Корзина:0</a></div>
-					<div class="cart"><a href="#">Оформить заказ</a></div>
+					<div class="header-top-left">
+                        <div class="bookmark"><a href="#">Закладки:0</a></div>
+                        <div class="basket"><a href="#">Корзина:0</a></div>
+                        <div class="cart"><a href="#">Оформить заказ</a></div>
+                    </div>
 				</div>
 			</div>
 			<div class="header-bottom">
@@ -77,22 +81,19 @@
 						<div class="promo-layout promo-layout-1">
 							<div class="promo-feature">
 								<div class="promo-feature-title">Материалы</div>
-								<div class="promo-feature-btn promo-feature-btn-1"><a href="#">На любой вкус</a></div>   <!--изменить на ссалку-->
-								<div class="promo-feature-icon promo-feature-materials"></div>
+								<div class="promo-feature-btn promo-feature-btn-1"><a href="#">На любой вкус</a></div>   
 							</div>
 						</div>
 						<div class="promo-layout promo-layout-2">
 							<div class="promo-feature">
 								<div class="promo-feature-title">Инструмент</div>
 								<div class="promo-feature-btn promo-feature-btn-2"><a href="#">На все случаи</a></div>
-								<div class="promo-feature-icon promo-feature-tools"></div>
 							</div>
 						</div>
 						<div class="promo-layout promo-layout-3">
 							<div class="promo-feature">
 								<div class="promo-feature-title">Техника</div>
 								<div class="promo-feature-btn promo-feature-btn-3"><a href="#">Для стройки</a></div>
-								<div class="promo-feature-icon promo-feature-equipment"></div>
 							</div>
 						</div>
                         <div class="slider">
@@ -102,23 +103,21 @@
 							<div class="promo-feature">
 								<div class="promo-feature-title">Скидка 50%</div>
 								<div class="promo-feature-btn promo-feature-btn-4"><a href="#">На 350 товаров</a></div>
-								<div class="promo-feature-icon promo-feature-discount"></div>
 							</div>
 						</div>
 						<div class="promo-layout promo-layout-5">
 							<div class="promo-feature">
 								<div class="promo-feature-title">Доставка</div>
 								<div class="promo-feature-btn promo-feature-btn-5"><a href="#">Бесплатно</a></div>
-								<div class="promo-feature-icon promo-feature-shipping"></div>
 							</div>
 						</div>
 					</div>
-
-					
+				
 					<div class="headline">
-						<span class="headline-title">Популярные товары:</span>
-						<a class="button-1" href="#">Все популярные товары</a>
+						<p class="headline-title">Популярные товары:</p>
+						<a class="button" href="#">Все популярные товары</a>
 					</div>
+                    
 					<div class="products">
 						<section class="products-card">
 							<img src="img/bfg9.jpg" width="184" height="164" alt="Перфоратор BOSH BFG 9000">
@@ -145,10 +144,12 @@
 							<a class="buy" href="#">12500 P.</a>
 						</section>
 					</div>
+                    
 					<div class="headline">
-						<span class="headline-title">Популярные производители:</span>
-						<a class="button-1" href="#">Все производители</a>
+						<p class="headline-title">Популярные производители:</p>
+						<a class="button" href="#">Все производители</a>
 					</div>
+                    
 					<div class="manufacturer-block">
                         <div class="manufacturer-item manufacturer-1">
                             <a href="#"><img src="img/BOSCH.jpg" width="126" height="37" alt="BOSCH"></a>
@@ -205,32 +206,33 @@
 					<div class="services-icon"></div>
 				</div>
 			</div>
-			<div class="about">
+            
+			<div class="about-company">
 				<div class="wrapper clearfix">
-					<div class="about-company">
-						<h2 class="company-title">Компания «Техномарт»</h2>
+					<div class="company-description">
+						<h2>Компания «Техномарт»</h2>
 						<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
 						<p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
 						   Техномарт работает со многими транспортными компаниями:</p>
 						<ul class="list-red-line">
 							<li>
-								<a href="#">Деловые линии</a>
+								Деловые линии
 							</li>
 							<li>
-								<a href="#">Автотрейдинг</a>
+								Автотрейдинг
 							</li>
 							<li>
-								<a href="#">ЖелДорЭкспедиция</a>
+								ЖелДорЭкспедиция
 							</li>
 						</ul>
-						<a class="button-2" href="#">Подробнее о компании</a>
+						<a class="button" href="#">Подробнее о компании</a>
 					</div>
-					<div class="map">
-						<span class="company-map-title">Контакты</span>
+					<div class="company-contacts">
+						<h2>Контакты</h2>
 						<p>Вы можете забрать товар сами,<br>
 						   заехав в наш офис:</p>
 						<img src="img/map.jpg" width="300" height="158" alt="map">
-						<a class="button-3" href="#">Заблудились? Напишите нам!</a>
+						<a class="button" href="#">Заблудились? Напишите нам!</a>
 					</div>
 				</div>
 			</div>
@@ -253,6 +255,9 @@
                             <li>
                                 <a href="#">Доставка</a>
                             </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
                         </ul>    
                         <ul class="footer-nav-bottom">
                             <li>
@@ -269,20 +274,23 @@
                             </li>
                         </ul>
                     </div>
-					<a href="#"><img src="img/logo.jpg" width="300" height="100" alt="Магазин «Техномарт»"></a>
-					<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+					<div class="footer-logo">
+        				<a>Техномарт</a>
+					</div>
+					<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+                    +7 (812) 555-05-55</p>
 				</div>
 			</div>
 			<div class="footer-bottom">
-				<div class="wrapper">
+				<div class="wrapper clearfix">
 					<section class="footer-rights">
                         <p>2010-2016 Компания «Техномарт»<br>
 					   Все права защищены</p>
                     </section>
 					<section class="footer-social">
-						<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-						<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-						<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+						<a class="social-btn" href="#">Вконтакте<span class="icon-vk"></span></a>
+						<a class="social-btn" href="#">Фейсбук<span class="icon-facebook"></span></a>
+						<a class="social-btn" href="#">Инстаграм<span class="icon-instagramm"></span></a>
 					</section>
 					<section class="footer-feedback">
 						<p>Обратная связь:</p>
