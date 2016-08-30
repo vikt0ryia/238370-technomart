@@ -17,21 +17,6 @@ h2 {
     text-transform: uppercase;
 }
 
-/*
-h1 {
-	font-size: 16px;
-	line-height: 23px;
-	color: #ee3643;
-	font-style: italic;
-	font-family: Cuprum;
-}
-
-*/
-
-
-
-
-
 
 
 @font-face {
@@ -235,6 +220,15 @@ form {
     content: "\62";
 }
 
+.basket.full {
+    background: #ee3643;
+}
+
+.basket.full::before {
+    color: #f3737c;
+}
+
+
 
 
    /* Header-bottom */
@@ -242,7 +236,6 @@ form {
 
 .header-bottom {
     padding-bottom: 60px;
-    margin-bottom: 58px;
     background-color: #f1f5f7;
 }
 
@@ -300,8 +293,8 @@ form {
     font-family: "symbols-technomart";
     font-size: 22px;
     color: #b8c8d4;
-    top: 9px;
-    left: 16px;
+    top: 12px;
+    left: 13px;
 }
 
 .header-contacts p {
@@ -320,9 +313,10 @@ form {
     float: right;
     margin-right: 0;
     font-size: 0;
+    width: 300px;
 }
 
-.user-block a {
+.user-block-1 a {
     display: inline-block;
     text-decoration: none;
     vertical-align: top;
@@ -337,6 +331,78 @@ form {
     margin-left: 10px;
     box-sizing: border-box;
     letter-spacing: -0.6px;
+}
+
+.user-block-2 a {
+    font-size: 16px;
+    color: #32425c;
+    margin-left: 19px;
+    margin-right: 13px;
+}
+
+a.account {
+    position: relative;
+    display: inline-block;
+}
+
+.account::before {
+    content: "";
+    width: 4px;
+	height: 4px;
+	background: #32425c;;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+    position: absolute;
+    top: 9px;
+    left: -17px;
+}
+
+a.user {
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: top;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
+    padding: 12px;
+    padding-left: 48px;
+    background: #ffffff;
+    width: 250px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+a.exit {
+    display: inline-block;
+    width: 50px;
+    height: 45px;
+    background: #ffffff;
+    margin: 0;
+    position: relative;
+}
+
+.user::before {
+    position: absolute;
+    content: "👨";
+    font-family: "symbols-technomart";
+    font-size: 18px;
+    color: #c5c5c5;
+    top: 12px;
+    left: 15px;
+}
+
+.exit::after {
+    position: absolute;
+    content: "\241b";
+    font-family: "symbols-technomart";
+    font-size: 22px;
+    color: #c5c5c5;
+    top: 12px;
+    right: 10px;
 }
 
 a.registration {
@@ -398,6 +464,7 @@ a.login {
 
 .promo {
     margin: 0;
+    margin-top: 58px;
     margin-bottom: 53px;
     padding: 0;
 }
@@ -1050,64 +1117,446 @@ a.social-btn {
             /* Catalog */ 
 
 .breadcrumbs {
-    outline: 2px solid orange;
+    padding: 0;
+    margin: 0;
+    margin-top: 17px;
     font-size: 0;
 }
 
 .breadcrumbs li {
-    display: inline-block;
-    font-size: 12px;
+    display: inline;
+    padding-right: 42px;
+    position: relative;
 }
 
-.catalog-title {
-    outline: 2px solid pink;
+.breadcrumbs li:first-child {
+    padding-right: 31px;
 }
+
+.breadcrumbs a {
+    display: inline;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+
+}
+
+.breadcrumbs li::after {
+    position: absolute;
+    content: "\3e";
+    font-family: "symbols-technomart";
+    font-size: 14px;
+    line-height: 20px;
+    color: #c1c6ce;
+    right: 15px;
+}
+
+.breadcrumbs .current::after {
+  display: none;
+}
+
+.icon-home {
+    font-size: 16px;
+    line-height: 20px;
+    color: #c1c6ce;
+    position: relative;
+    top: 1px;
+    left: -3px;
+}
+
+h1.catalog-title {
+    margin: 0;
+    margin-top: 14px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 30px;
+    background: #f2f6f8;
+}
+
+
+   /*       catalog-body         */
+
+.catalog-body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+  /*      filter    */
 
 .filter {
-    outline: 2px solid brown;
     width: 220px;
     float: left;
     margin-right: 20px;
+    
 }
 
-.scroll-price {
-    min-height: 190px;
-    outline: 2px solid orange;
+.filter p {
+    margin: 0;
+    margin-bottom: 20px;
+    background: #f7f3ec;
+    padding: 10px 19px;
+    font-size: 13px;
+    line-height: 18px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-transform: uppercase;
+    border-radius: 2px;
 }
+
+   /*      range-filter        */
+
+
+.range-filter {
+    width: 220px;
+}
+
+.range-controls {
+    position: relative;
+    height: 41px;
+    padding-top: 39px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 9px;
+    border-radius: 5px;
+    background: #f7f3ec;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background: #d7dcde;
+}
+
+.range-controls .bar {
+    width: 70%;
+    height: 2px;
+    background: #00ca74;
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    width: 4px;
+    height: 4px;
+    cursor: pointer;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    background: #ababab;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+    left: 20px;
+}
+
+.range-controls .toggle-max {
+    left: 160px;
+}
+
+.price-controls {
+    font-size: 0;
+}
+
+.price-controls span {
+    display: inline-block;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+}
+
+.price-controls input {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 17px;
+    width: 95px;
+    margin-left: 0;
+    padding: 8px 10px;
+    text-align: center;
+    color: #283136;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: #f7f3ec;
+    box-sizing: border-box;
+}
+
+legend {
+    border: none;
+}
+
+
+   /*      range-filter        */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*       catalog-main         */
 
 .catalog-main {
-    outline: 2px solid green;
     width: 700px;
     float: right;
-    margin-bottom: 50px;
+    margin-bottom: 61px;
 }
+
 .catalog-main-sort {
-    outline: 2px solid orange;
+    font-size: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    padding-left: 19px;
+    padding-right: 6px;
+    min-height: 38px;
+    background: #f7f3ec;
+    border-radius: 2px;
+}
+
+.catalog-main-sort p {
+    float: left;
+    padding: 10px 0;
+}
+
+.catalog-main-sort ul {
+    float: right;
+}
+
+.catalog-main-sort li {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 6px;
 }
 
 .catalog-main-sort p,
 .catalog-main-sort li {
-    display: inline-block;
+    font-size: 13px;
+    line-height: 18px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-transform: uppercase;
+    margin: 0;
 }
+
+.catalog-main-sort a:not(.sort-ikon-up):not(.sort-ikon-down) {
+    text-decoration: none;
+    border-bottom: 1px dotted #ee3643;
+    color: #acaaa5;
+    margin-left: 67px;
+}
+
+.icon-up-dir,
+.icon-down-dir {
+    font-family: "symbols-technomart";
+    font-size: 23px;
+    line-height: 20px;
+    color: #c6c2bd;
+    border: none;
+    padding: 0;
+}
+
+.icon-up-dir {
+    padding-left: 35px;
+}
+
+
+  /*     products-conteiner    */
+
 
 .products-conteiner {
     font-size: 0;
-    margin-bottom: 21px;
-    outline: 2px solid yellow;
+    margin-bottom: 30px;
+}
+
+.products-conteiner .products-card {
+    margin-bottom: 19px;
 }
 
 .products-conteiner .products-card:nth-child(3n) {
     margin-right: 0;
 }
 
+
+    /*    paginator       */
+
 .paginator {
-    outline: 2px solid brown;
+    font-size: 0;
 }
 
-.paginator li {
+.paginator a {
     display: inline-block;
+    min-width: 16px;
+    height: 36px;
+    padding: 0 10px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #000000;
+    background: #ffffff;
+    font-size: 13px;
+    line-height: 36px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-transform: uppercase;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    margin-right: 10px;
 }
 
+.paginator a.next {
+    padding: 0 30px;
+}
+
+.paginator a.activ {
+    background: #ee3643;
+    color: #ffffff;
+}
+
+
+   /*    catalog-about    */
+
+.catalog-about {
+    background: #f2f6f8;
+    padding: 65px 0;
+}
+
+.catalog-about p {
+    margin: 0;
+    font-size: 13px;
+	line-height: 24px;
+	color: #000000;
+	font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.catalog-about h2 {
+    margin: 0;
+    margin-bottom: 27px;
+}
+
+
+     /*    modal-content     */
+
+.modal-content {
+    position: absolute;
+    z-index: 100;
+    top: 410px;
+    left: 50%;
+    border-top: 7px solid #ee3643;
+    width: 620px;
+    margin-left: -310px;
+    background: pink;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-content-close {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    width: 21px;
+    height: 21px;
+    font-size: 0;
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    width: 25px;
+    height: 5px;
+    background-color: #ee3643;
+    border-radius: 1px;
+}
+
+.modal-content-close::before {
+    transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+    transform: rotate(-45deg);
+}
+
+.modal-top {
+    background: #ffffff;
+    height: 163px;
+    
+}
+
+.modal-top p {
+    font-size: 30px;
+    line-height: 66px;
+    margin: 0;
+    padding: 50px;
+    padding-left: 180px;
+}
+
+.modal-top p::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    width: 66px;
+    height: 66px;
+    background: #63a63e url("../img/Ok.png") no-repeat 50% 50%;
+    border-radius: 50%;
+}
+
+.modal-bottom {
+    font-size: 0;
+    background: #f1f1f1;
+}
+
+.modal-bottom .btn {
+    display: inline-block;
+    padding: 10px;
+    width: 220px;
+    text-align: center;
+    box-sizing: border-box;
+    text-decoration: none;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 3px;
+    background: #ee3643;
+    margin-top: 37px;
+    margin-bottom: 37px;
+}
+
+.modal-bottom .btn-1 {
+    float: left;
+    margin-left: 80px;
+}
+
+.modal-bottom .btn-2 {
+    background: #ffffff;
+    color: #000000;
+    font-weight: bold;
+    float: right;
+    margin-right: 80px;
+}
 
 
 
