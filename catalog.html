@@ -14,7 +14,7 @@
 			<div class="header-top">
 				<div class="wrapper clearfix">
 					<div class="header-logo">
-        				<a>Техномарт</a>
+        				<a href="index.html">Техномарт</a>
 					</div>
 					<form action="#" method="post" class="search">
 						<input type="search" placeholder="Поиск:" class="input"/>
@@ -39,8 +39,10 @@
 							<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 						</div>
 						<div class="user-block user-block-2">
-							<a class="user" href="#">Равшан Джамшутович</a>
-                            <a class="exit" href="#"></a>
+                            <div>
+                                <a class="user" href="#">Равшан Джамшутович</a>
+                                <a class="exit" href="#"></a>
+                            </div>
 							<a href="#">Мои заказы</a>
                             <a class="account" href="#">Личный кабинет</a>
 						</div>
@@ -99,7 +101,7 @@
                         <form action="#" method="post">
                             
                             <fieldset class="range-filter">
-                                <legend>Производители:</legend>
+                                <legend>Цена:</legend>
                                 <div class="range-controls">
                                     <div class="scale">
                                         <div class="bar" style="margin-left: 10%; width: 70%"></div>
@@ -116,34 +118,67 @@
                             
                             <fieldset class="manufacturer-filter">
                                 <legend>Производители:</legend>
-                                <input type="checkbox" name="bosh" id="bosh" checked>
-                                <label for="bosh">Bosh</label>
-                                <br>
-                                <input type="checkbox" name="interskol" id="interskol">
-                                <label for="interskol">Интерскол</label>
-                                <br>
-                                <input type="checkbox" name="makita" id="makita" checked>
-                                <label for="makita">Makita</label>
-                                <br>
-                                <input type="checkbox" name="dewalt" id="dewalt">
-                                <label for="dewalt">dewalt</label>
-                                <br>
-                                <input type="checkbox" name="hitachi" id="hitachi">
-                                <label for="hitachi">hitachi</label>
+                                <div>
+                                    <label class="manufacturer-checkbox">
+                                        <input type="checkbox" name="bosh" id="bosh" checked>
+                                        <span class="icon-check icon-check-off"></span>
+                                        <span class="icon-check icon-check-on"></span>
+                                        Bosh
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="manufacturer-checkbox">
+                                        <input type="checkbox" name="interskol" id="interskol">
+                                        <span class="icon-check icon-check-off"></span>
+                                        <span class="icon-check icon-check-on"></span>
+                                        Интерскол
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="manufacturer-checkbox">
+                                        <input type="checkbox" name="makita" id="makita" checked>
+                                        <span class="icon-check icon-check-off"></span>
+                                        <span class="icon-check icon-check-on"></span>
+                                        Makita
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="manufacturer-checkbox">
+                                        <input type="checkbox" name="dewalt" id="dewalt">
+                                        <span class="icon-check icon-check-off"></span>
+                                        <span class="icon-check icon-check-on"></span>
+                                        dewalt
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="manufacturer-checkbox">
+                                        <input type="checkbox" name="hitachi" id="hitachi">
+                                        <span class="icon-check icon-check-off"></span>
+                                        <span class="icon-check icon-check-on"></span>
+                                        hitachi
+                                    </label>
+                                </div>
                             </fieldset>
                             <fieldset class="power-filter">
                                 <legend>Питание:</legend>
-                                <label>
-                                    <input type="radio" name="power" value="battery">
-                                    Аккумуляторные
-                                </label>
-                                <br>
-                                <label>
-                                    <input type="radio" name="power" value="set">
-                                    Сетевые
-                                </label>
+                                <div>
+                                    <label class="power-radio">
+                                        <input type="radio" name="power" value="battery">
+                                        <span class="icon-radio icon-circle"></span>
+                                        <span class="icon-radio icon-circle-dot"></span>
+                                        Аккумуляторные
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="power-radio">
+                                        <input type="radio" name="power" value="set">
+                                        <span class="icon-circle icon-circle-dot"></span>
+                                        <span class="icon-circle"></span>
+                                        Сетевые
+                                    </label>
+                                </div>
                             </fieldset>
-                            <input type="submit" value="Отправить">
+                            <input type="submit" value="Показать">
                         </form>
                     </div>
 
@@ -180,7 +215,7 @@
                                 </div>
                                 <h1 class="products-name">Перфоратор BOSH BFG 3000</h1>
                                 <div class="discount">22500 P.</div>
-                                <div class="price" href="#">15500 P.</div>
+                                <div class="price">15500 P.</div>
                             </article>
 
                             <article class="products-card">
@@ -193,7 +228,7 @@
                                 </div>
                                 <h1 class="products-name">Перфоратор BOSH BFG 6000</h1>
                                 <div class="discount">30500 P.</div>
-                                <div class="price" href="#">25500 P.</div>
+                                <div class="price">25500 P.</div>
                             </article>
 
                             <article class="products-card  new">
@@ -206,7 +241,7 @@
                                 </div>
                                 <h1 class="products-name">Перфоратор BOSH BFG 2000</h1>
                                 <div class="discount"></div>
-                                <div class="price" href="#">12500 P.</div>
+                                <div class="price">12500 P.</div>
                             </article>
 
                             <article class="products-card">
@@ -219,7 +254,7 @@
                                 </div>
                                 <h1 class="products-name">Перфоратор BOSH BFG 3000</h1>
                                 <div class="discount">22500 P.</div>
-                                <div class="price" href="#">15500 P.</div>
+                                <div class="price">15500 P.</div>
                             </article>
 
                             <article class="products-card new">
@@ -232,7 +267,7 @@
                                 </div>
                                 <h1 class="products-name">Перфоратор BOSH BFG 6000</h1>
                                 <div class="discount">30500 P.</div>
-                                <div class="price" href="#">25500 P.</div>
+                                <div class="price">25500 P.</div>
                             </article>
 
                             <article class="products-card">
@@ -245,7 +280,7 @@
                                 </div>
                                 <h1 class="products-name">Перфоратор BOSH BFG 2000</h1>
                                 <div class="discount"></div>
-                                <div class="price" href="#">12500 P.</div>
+                                <div class="price">12500 P.</div>
                             </article>
 
                             <article class="products-card new">
@@ -258,7 +293,7 @@
                                 </div>
                                 <h1 class="products-name">Перфоратор BOSH BFG 3000</h1>
                                 <div class="discount">22500 P.</div>
-                                <div class="price" href="#">15500 P.</div>
+                                <div class="price">15500 P.</div>
                             </article>
 
                             <article class="products-card">
@@ -271,7 +306,7 @@
                                 </div>
                                 <h1 class="products-name">Перфоратор BOSH BFG 6000</h1>
                                 <div class="discount">30500 P.</div>
-                                <div class="price" href="#">25500 P.</div>
+                                <div class="price">25500 P.</div>
                             </article>
 
                             <article class="products-card">
@@ -284,7 +319,7 @@
                                 </div>
                                 <h1 class="products-name">Перфоратор BOSH BFG 2000</h1>
                                 <div class="discount"></div>
-                                <div class="price" href="#">12500 P.</div>
+                                <div class="price">12500 P.</div>
                             </article>
                         </div>
 
@@ -342,7 +377,7 @@
                         </ul>
                     </div>
 					<div class="footer-logo">
-        				<a>Техномарт</a>
+        				<a href="index.html">Техномарт</a>
 					</div>
 					<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
                     +7 (812) 555-05-55</p>
