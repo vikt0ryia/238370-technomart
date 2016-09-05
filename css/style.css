@@ -267,7 +267,7 @@ form {
     text-decoration: none;
     font-size: 21px;
     line-height: 21px;
-    font-weight: bold;
+    font-weight: normal;
     color: #ee3643;
     text-align: left;
     width: 270px;
@@ -277,7 +277,6 @@ form {
     padding-bottom: 9px;
     border: 3px solid white;
     margin-bottom: 5px;
-    letter-spacing: -0.3px;
 }
 
 .header-contacts-number {
@@ -298,12 +297,11 @@ form {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 14px;
     line-height: 24px;
-    font-weight: bold;
+    font-weight: normal;
     color: #32425c;
     text-align: center;
     max-width:  width: 270px;
     margin: 0;
-    letter-spacing: -0.3px;
 }
 
 .user-block {
@@ -317,6 +315,10 @@ form {
     line-height: 0;
 }
 
+.user-block-1 {
+    text-align: right;
+}
+
 .user-block-1 a {
     display: inline-block;
     text-decoration: none;
@@ -325,13 +327,12 @@ form {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 21px;
     line-height: 21px;
-    font-weight: bold;
+    font-weight: normal;
     color: #000000;
     padding: 12px 25px;
     background:  white;
     margin-left: 10px;
     box-sizing: border-box;
-    letter-spacing: -0.6px;
 }
 
 .user-block-2 a {
@@ -344,6 +345,7 @@ form {
 a.account {
     position: relative;
     display: inline-block;
+    vertical-align: top;
 }
 
 .account::before {
@@ -379,6 +381,7 @@ a.user {
 
 a.exit {
     display: inline-block;
+    vertical-align: top;
     width: 50px;
     height: 45px;
     background: #ffffff;
@@ -900,6 +903,7 @@ a.login {
 
 .manufacturer-item a {
     display: inline-block;
+    vertical-align: top;
     width:220px;
     height:145px;
     position: relative;
@@ -1004,7 +1008,7 @@ a.login {
 }
 
 
-.slides-services .slide h3 {
+.slides-services h3 {
     padding: 0;
     margin: 0;
     margin-top: 43px;
@@ -1016,7 +1020,7 @@ a.login {
     color: #32425c;
 }
 
-.slides-services .slide p {
+.slides-services p {
     padding: 0;
     margin: 0;
     margin-bottom: 15px;
@@ -1105,6 +1109,12 @@ a.login {
     margin-bottom: 16px;
 }
 
+.company-description p:last-of-type {
+    width: 400px;
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+
 .list-red-line {
     margin: 0;
     margin-top: 17px;
@@ -1142,13 +1152,46 @@ a.login {
     margin-top: 32px;
 }
 
+.company-contacts p {
+    width: 190px;
+}
+
 .company-contacts img {
     width: 300px;
     height: 158px;
     margin-top: 15px;
 }
 
+
+
 /*     modal-write      */
+
+@keyframes bounce {
+  0%   {
+    transform: translateY(-2000px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
 
 .modal-write {
     position: fixed;
@@ -1171,6 +1214,7 @@ a.login {
 .write-box {
     width: 220px;
     display: inline-block;
+    vertical-align: top;
 }
 
 .modal-write-top .write-box:first-child {
@@ -1239,6 +1283,21 @@ a.login {
     background: #ee3643;
 }
 
+.modal-write {
+    display: none;
+}
+
+.modal-write-show {
+    display: block;
+    animation: bounce 0.6s;
+}
+
+.modal-error {
+    animation: shake 0.6s;
+}
+
+
+
    /*   modal map   */
 
 .modal-map {
@@ -1263,8 +1322,9 @@ a.login {
     display: none;
 }
 
-.modal-write {
-    display: none;
+.modal-map-show {
+    display: block;
+    animation: bounce 0.6s;
 }
 
 
@@ -1286,6 +1346,7 @@ a.login {
     background: #ee3643;
     box-shadow: 0 5px 0 0 #b52933;
     text-transform: uppercase;
+    text-decoration: none;
     color: #ffffff;
     margin: 0;
     margin-right: 160px;
@@ -1377,6 +1438,7 @@ a.login {
 .footer-rights {
     float: left;
     padding-top: 3px;
+    width: 230px;
 }
 
 .footer-social,
@@ -1944,7 +2006,7 @@ fieldset.power-filter {
     left: 80px;
     width: 66px;
     height: 66px;
-    background: #63a63e url("../img/Ok.png") no-repeat 50% 50%;
+    background: #63a63e url("../img/ok.png") no-repeat 50% 50%;
     border-radius: 50%;
 }
 
@@ -1984,4 +2046,7 @@ fieldset.power-filter {
     margin-right: 80px;
 }
 
-      
+.modal-content-show {
+    display: block;
+    animation: bounce 0.6s;
+}    

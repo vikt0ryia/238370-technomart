@@ -237,7 +237,7 @@
                                     <a href="#" class="bookmark-add">В закладки</a>
                                 </div>
                                 <div class="products-image">
-                                    <img src="img/bfg3.jpg" width="144" height="128" alt="Перфоратор BOSH BFG 6000">
+                                    <img src="img/bfg2.jpg" width="127" height="112" alt="Перфоратор BOSH BFG 6000">
                                 </div>
                                 <h1 class="products-name">Перфоратор BOSH BFG 2000</h1>
                                 <div class="discount"></div>
@@ -276,7 +276,7 @@
                                     <a href="#" class="bookmark-add">В закладки</a>
                                 </div>
                                 <div class="products-image">
-                                    <img src="img/bfg3.jpg" width="144" height="128" alt="Перфоратор BOSH BFG 6000">
+                                    <img src="img/bfg2.jpg" width="127" height="112" alt="Перфоратор BOSH BFG 2000">
                                 </div>
                                 <h1 class="products-name">Перфоратор BOSH BFG 2000</h1>
                                 <div class="discount"></div>
@@ -315,7 +315,7 @@
                                     <a href="#" class="bookmark-add">В закладки</a>
                                 </div>
                                 <div class="products-image">
-                                    <img src="img/bfg3.jpg" width="144" height="128" alt="Перфоратор BOSH BFG 6000">
+                                    <img src="img/bfg2.jpg" width="127" height="112" alt="Перфоратор BOSH BFG 2000">
                                 </div>
                                 <h1 class="products-name">Перфоратор BOSH BFG 2000</h1>
                                 <div class="discount"></div>
@@ -379,15 +379,15 @@
 					<div class="footer-logo">
         				<a href="index.html">Техномарт</a>
 					</div>
-					<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+					<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                     +7 (812) 555-05-55</p>
 				</div>
 			</div>
 			<div class="footer-bottom">
 				<div class="wrapper clearfix">
 					<section class="footer-rights">
-                        <p>2010-2016 Компания «Техномарт»<br>
-					   Все права защищены</p>
+                        <p>&#169; 2010-2016 Компания «Техномарт»
+                        Все права защищены</p>
                     </section>
 					<section class="footer-social">
 						<a class="social-btn" href="#">Вконтакте<span class="icon-vk"></span></a>
@@ -417,5 +417,30 @@
             </div>
         </div>
         
+        <script>
+
+
+          var modalBuy = document.querySelector(".buy");
+          var modalPopup = document.querySelector(".modal-content");
+          var modalClose = mapPopup.querySelector(".modal-content-close");
+
+          modalBuy.addEventListener("click", function(event) {
+            event.preventDefault();
+            modalPopup.classList.add("modal-content-show");
+          });
+
+          modalClose.addEventListener("click", function(event) {
+            event.preventDefault();
+            modalPopup.classList.remove("modal-content-show");
+          });
+
+          window.addEventListener("keydown", function(event) {
+            if (event.keyCode === 27) {
+              if (modalPopup.classList.contains("modal-content-show")) {
+                modalPopup.classList.remove("modal-content-show");
+              }
+            }
+          });
+        </script>
 	</body>
 </html>
