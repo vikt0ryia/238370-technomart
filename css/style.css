@@ -1897,7 +1897,7 @@ fieldset.manufacturer-filter {
 }
 
 .manufacturer-filter label:active {
-    color: rgba(0, 0, 0, 0.4);
+    opacity: 0.4;
 }
 
 .manufacturer-filter input[type="checkbox"] {
@@ -1923,10 +1923,6 @@ fieldset.manufacturer-filter {
 
 .manufacturer-checkbox .icon-check:hover {
     color: #b5b5b5;
-}
-
-.manufacturer-checkbox .icon-check:active {
-    color: rgba(0, 0, 0, 0.4);
 }
 
 .manufacturer-checkbox .icon-check-on {
@@ -1964,6 +1960,10 @@ fieldset.manufacturer-filter {
 	padding-left: 18px;
 }
 
+.power-filter label:active {
+    opacity: 0.4;
+}
+
 .power-filter input[type="radio"] {
 	margin-bottom: 24px;
 }
@@ -1990,6 +1990,11 @@ fieldset.power-filter {
 	color: #c1c1c1;
 	left: -8px;
 	top: -6px;
+}
+
+.power-radio .icon-circle:hover,
+.power-radio .icon-circle-dot:hover {
+    color: #b5b5b5;
 }
 
 .power-radio input[type="radio"] ~ .icon-circle-dot {

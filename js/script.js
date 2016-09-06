@@ -1,3 +1,34 @@
+var modalBuy = document.querySelectorAll(".buy");
+var modalPopup = document.querySelector(".modal-content");
+var modalClose = modalPopup.querySelector(".modal-content-close");
+
+var i;
+
+for (i = 0; i < modalBuy.length; i++) {
+
+  modalBuy[i].addEventListener("click", function(event) {
+    event.preventDefault();
+    modalPopup.classList.add("modal-content-show");
+  });
+}
+
+modalClose.addEventListener("click", function(event) {
+  event.preventDefault();
+  modalPopup.classList.remove("modal-content-show");
+});
+
+modalClose.addEventListener("click", function(event) {
+  event.preventDefault();
+  modalPopup.classList.remove("modal-content-show");
+});
+
+window.addEventListener("keydown", function(event) {
+  if (event.keyCode === 27) {
+    if (modalPopup.classList.contains("modal-content-show")) {
+      modalPopup.classList.remove("modal-content-show");
+    }
+  }
+});
 
 var link = document.querySelector(".button-modal");
 var popup = document.querySelector(".modal-write");
@@ -55,28 +86,6 @@ window.addEventListener("keydown", function(event) {
   if (event.keyCode === 27) {
     if (mapPopup.classList.contains("modal-map-show")) {
       mapPopup.classList.remove("modal-map-show");
-    }
-  }
-});
-
-var modalBuy = document.querySelector(".buy");
-var modalPopup = document.querySelector(".modal-content");
-var modalClose = modalPopup.querySelector(".modal-content-close");
-
-modalBuy.addEventListener("click", function(event) {
-  event.preventDefault();
-  modalPopup.classList.add("modal-content-show");
-});
-
-modalClose.addEventListener("click", function(event) {
-  event.preventDefault();
-  modalPopup.classList.remove("modal-content-show");
-});
-
-window.addEventListener("keydown", function(event) {
-  if (event.keyCode === 27) {
-    if (modalPopup.classList.contains("modal-content-show")) {
-      modalPopup.classList.remove("modal-content-show");
     }
   }
 });
